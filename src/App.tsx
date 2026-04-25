@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Globe, ArrowRight, Instagram, Twitter } from 'lucide-react';
+import { Globe, ArrowRight,  } from 'lucide-react';
 import './App.css';
 
 const App = () => {
@@ -133,19 +133,14 @@ const App = () => {
             Manifesto
           </button>
 
-          <div className="relative z-10 flex justify-center gap-4 pb-12 mt-16">
-            <button className="liquid-glass rounded-full p-4 text-white/80 hover:text-white hover:bg-white/5 transition-all">
-              <Instagram size={20} />
-            </button>
-            <button className="liquid-glass rounded-full p-4 text-white/80 hover:text-white hover:bg-white/5 transition-all">
-              <Twitter size={20} />
-            </button>
+                    <div className="relative z-10 flex justify-center gap-4 pb-12 mt-16">
             <button className="liquid-glass rounded-full p-4 text-white/80 hover:text-white hover:bg-white/5 transition-all">
               <Globe size={20} />
             </button>
           </div>
         </div>
       </section>
+
 
       {/* About Section */}
       <section ref={aboutRef} className="bg-black pt-32 md:pt-44 pb-10 md:pb-14 px-6 overflow-hidden relative">
